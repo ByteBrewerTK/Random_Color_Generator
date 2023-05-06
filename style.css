@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+body{
+    background: #AFD3E2;
+    font-family: 'Montserrat', sans-serif;
+    /* F6F1F1 */
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .card{
+    
+    background: #F6F1F1;
+    min-height: 40%;
+    aspect-ratio: 1.5/2;
+    border-radius: 1rem;
+    box-shadow: 0 0 7px 1px;
+    padding: 1rem;
+}
+.wrapper .card .color-preview{
+    width: 100%;
+    height: 60%;
+    border-radius: 1rem;
+    /* background: rgb(101, 101, 181); */
+    border: 1px solid black;
+}
+.wrapper .card .hex-code{
+    background: rgb(117, 117, 216);
+    width: 100%;
+    height:max-content;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    padding: .4rem;
+    border-bottom: 4px solid #89d4f5;
+}
+.wrapper .card .btn{
+    width: 100%;
+    height: max-content;
+    display: flex;  
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.wrapper .card .btn #btn-gen,#btn-copy{
+    text-align: center;
+    background-color: rgb(117, 117, 216);
+    padding: .6rem 1.3rem;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 7px 1px;
+    font-weight: bold;
+    transition: all .3s;
+
+}
+.card .btn #btn-gen:hover{
+   scale: 1.05;
+}
+.card .btn #btn-copy:hover{
+   scale: 1.05;
+}
